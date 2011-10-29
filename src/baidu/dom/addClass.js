@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All right reserved.
- * 
+ *
  * path: baidu/dom/addClass.js
  * author: allstar, erik
  * version: 1.1.0
@@ -23,8 +23,8 @@
  * @shortcut addClass
  * @meta standard
  * @see baidu.dom.removeClass
- * 	
- * 	            
+ *
+ *
  * @returns {HTMLElement} 目标元素
  */
 baidu.dom.addClass = function (element, className) {

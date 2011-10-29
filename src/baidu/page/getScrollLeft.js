@@ -4,13 +4,13 @@
  * @function
  * @grammar baidu.page.getScrollLeft()
  * @see baidu.page.getScrollTop
- *             
+ *
  * @returns {number} 横向滚动量
  */
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/page/getScrollLeft.js
  * author: erik
  * version: 1.1.0
@@ -21,7 +21,7 @@
 
 /**
  * 获取横向滚动量
- * 
+ *
  * @return {number} 横向滚动量
  */
 baidu.page.getScrollLeft = function () {

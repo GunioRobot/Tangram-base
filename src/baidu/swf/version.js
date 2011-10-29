@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/swf/version.js
  * author: erik
  * version: 1.1.0
@@ -12,7 +12,7 @@
 
 /**
  * @property version 浏览器支持的flash插件版本
- * @grammar baidu.swf.version 
+ * @grammar baidu.swf.version
  */
 baidu.swf.version = (function () {
     var n = navigator;

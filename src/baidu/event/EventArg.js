@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/event/EventArg.js
  * author: erik
  * version: 1.1.0
@@ -25,7 +25,7 @@ baidu.event.EventArg = function (event, win) {
     win = win || window;
     event = event || win.event;
     var doc = win.document;
-    
+
     this.target = event.target || event.srcElement;
     this.keyCode = event.which || event.keyCode;
     for (var k in event) {
@@ -35,13 +35,13 @@ baidu.event.EventArg = function (event, win) {
             this[k] = item;
         }
     }
-    
+
     if (!this.pageX && this.pageX !== 0) {
-        this.pageX = (event.clientX || 0) 
-                        + (doc.documentElement.scrollLeft 
+        this.pageX = (event.clientX || 0)
+                        + (doc.documentElement.scrollLeft
                             || doc.body.scrollLeft);
-        this.pageY = (event.clientY || 0) 
-                        + (doc.documentElement.scrollTop 
+        this.pageY = (event.clientY || 0)
+                        + (doc.documentElement.scrollTop
                             || doc.body.scrollTop);
     }
     this._event = event;

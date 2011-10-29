@@ -2,7 +2,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All right reserved.
- * 
+ *
  * path: baidu/dom/getParent.js
  * author: berg
  * version: 1.0.0

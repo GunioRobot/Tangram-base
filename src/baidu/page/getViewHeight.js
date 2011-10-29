@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/page/getViewHeight.js
  * author: allstar
  * version: 1.1.0
@@ -16,7 +16,7 @@
  * @function
  * @grammar baidu.page.getViewHeight()
  * @see baidu.page.getViewWidth
- *             
+ *
  * @returns {number} 页面视觉区域高度
  */
 baidu.page.getViewHeight = function () {

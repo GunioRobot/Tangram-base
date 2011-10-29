@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/dom/getAttr.js
  * author: allstar, erik
  * version: 1.1.0
@@ -21,7 +21,7 @@
  * @shortcut getAttr
  * @meta standard
  * @see baidu.dom.setAttr,baidu.dom.setAttrs
- *             
+ *
  * @returns {string|null} 目标元素的attribute值，获取不到时返回null
  */
 baidu.dom.getAttr = function (element, key) {

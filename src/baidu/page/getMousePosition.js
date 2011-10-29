@@ -4,13 +4,13 @@
  * @function
  * @grammar baidu.page.getMousePosition()
  * @version 1.2
- *             
+ *
  * @returns {object} 鼠标坐标值{x:[Number], y:[Number]}
  */
 /*
  * Tangram
  * Copyright 2010 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/page/getMousePosition.js
  * author: meizz
  * version: 1.1.0

@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/json/stringify.js
  * author: erik
  * version: 1.1.0
@@ -20,7 +20,7 @@
  * 该方法的实现与ecma-262第五版中规定的JSON.stringify不同，暂时只支持传入一个参数。后续会进行功能丰富。
  * @meta standard
  * @see baidu.json.parse,baidu.json.encode
- *             
+ *
  * @returns {string} 序列化后的字符串
  */
 baidu.json.stringify = (function () {
@@ -37,7 +37,7 @@ baidu.json.stringify = (function () {
         '"' : '\\"',
         "\\": '\\\\'
     };
-    
+
     /**
      * 字符串序列化
      * @private
@@ -45,33 +45,33 @@ baidu.json.stringify = (function () {
     function encodeString(source) {
         if (/["\\\x00-\x1f]/.test(source)) {
             source = source.replace(
-                /["\\\x00-\x1f]/g, 
+                /["\\\x00-\x1f]/g,
                 function (match) {
                     var c = escapeMap[match];
                     if (c) {
                         return c;
                     }
                     c = match.charCodeAt();
-                    return "\\u00" 
-                            + Math.floor(c / 16).toString(16) 
+                    return "\\u00"
+                            + Math.floor(c / 16).toString(16)
                             + (c % 16).toString(16);
                 });
         }
         return '"' + source + '"';
     }
-    
+
     /**
      * 数组序列化
      * @private
      */
     function encodeArray(source) {
-        var result = ["["], 
+        var result = ["["],
             l = source.length,
             preComma, i, item;
-            
+
         for (i = 0; i < l; i++) {
             item = source[i];
-            
+
             switch (typeof item) {
             case "undefined":
             case "function":
@@ -88,7 +88,7 @@ baidu.json.stringify = (function () {
         result.push("]");
         return result.join("");
     }
-    
+
     /**
      * 处理日期序列化时的补零
      * @private
@@ -96,34 +96,34 @@ baidu.json.stringify = (function () {
     function pad(source) {
         return source < 10 ? '0' + source : source;
     }
-    
+
     /**
      * 日期序列化
      * @private
      */
     function encodeDate(source){
-        return '"' + source.getFullYear() + "-" 
-                + pad(source.getMonth() + 1) + "-" 
-                + pad(source.getDate()) + "T" 
-                + pad(source.getHours()) + ":" 
-                + pad(source.getMinutes()) + ":" 
+        return '"' + source.getFullYear() + "-"
+                + pad(source.getMonth() + 1) + "-"
+                + pad(source.getDate()) + "T"
+                + pad(source.getHours()) + ":"
+                + pad(source.getMinutes()) + ":"
                 + pad(source.getSeconds()) + '"';
     }
-    
+
     return function (value) {
         switch (typeof value) {
         case 'undefined':
             return 'undefined';
-            
+
         case 'number':
             return isFinite(value) ? String(value) : "null";
-            
+
         case 'string':
             return encodeString(value);
-            
+
         case 'boolean':
             return String(value);
-            
+
         default:
             if (value === null) {
                 return 'null';
@@ -136,7 +136,7 @@ baidu.json.stringify = (function () {
                     encode = baidu.json.stringify,
                     preComma,
                     item;
-                    
+
                 for (key in value) {
                     if (value.hasOwnProperty(key)) {
                         item = value[key];

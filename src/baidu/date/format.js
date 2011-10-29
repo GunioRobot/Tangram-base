@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/date/format.js
  * author: erik
  * version: 1.1.0
@@ -19,7 +19,7 @@
  * @param {Date} source 目标日期对象
  * @param {string} pattern 日期格式化规则
  * @remark
- * 
+ *
 <b>格式表达式，变量含义：</b><br><br>
 hh: 带 0 补齐的两位 12 进制时表示<br>
 h: 不带 0 补齐的 12 进制时表示<br>
@@ -35,8 +35,8 @@ MM: 带 0 补齐的两位月表示<br>
 M: 不带 0 补齐的月表示<br>
 dd: 带 0 补齐的两位日表示<br>
 d: 不带 0 补齐的日表示
-		
- *             
+
+ *
  * @returns {string} 格式化后的字符串
  */
 
@@ -48,7 +48,7 @@ baidu.date.format = function (source, pattern) {
     function replacer(patternPart, result) {
         pattern = pattern.replace(patternPart, result);
     }
-    
+
     var pad     = baidu.number.pad,
         year    = source.getFullYear(),
         month   = source.getMonth() + 1,

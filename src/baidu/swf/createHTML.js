@@ -16,7 +16,7 @@
  * @name baidu.swf.createHTML
  * @function
  * @grammar baidu.swf.createHTML(options)
- * 
+ *
  * @param {Object} 	options 					创建flash的选项参数
  * @param {string} 	options.id 					要创建的flash的标识
  * @param {string} 	options.url 				flash文件的url
@@ -41,9 +41,9 @@
  * @param {boolean} options.devicefont 			设置静态文本对象是否以设备字体呈现。允许值：true/false
  * @param {boolean} options.swliveconnect 		第一次加载flash时浏览器是否应启动Java。允许值：true/false
  * @param {Object} 	options.vars 				要传递给flash的参数，支持JSON或string类型。
- * 
+ *
  * @see baidu.swf.create
- *             
+ *
  * @returns {string} flash对象的html字符串
  */
 baidu.swf.createHTML = function (options) {

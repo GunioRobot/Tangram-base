@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/number/pad.js
  * author: dron, erik, berg
  * version: 1.1.0
@@ -17,7 +17,7 @@
  * @grammar baidu.number.pad(source, length)
  * @param {number} source 需要处理的数字
  * @param {number} length 需要输出的长度
- *             
+ *
  * @returns {string} 对目标数字进行0补齐处理后的结果
  */
 baidu.number.pad = function (source, length) {

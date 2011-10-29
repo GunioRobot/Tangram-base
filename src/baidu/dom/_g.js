@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/dom/g.js
  * author: allstar, erik, berg
  * version: 1.3
@@ -13,7 +13,7 @@
 /**
  * 从文档中获取指定的DOM元素
  * **内部方法**
- * 
+ *
  * @param {string|HTMLElement} id 元素的id或DOM元素
  * @return {HTMLElement} DOM元素，如果不存在，返回null，如果参数不合法，直接返回参数
  */

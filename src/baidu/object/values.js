@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/object/values.js
  * author: erik
  * version: 1.1.0
@@ -17,7 +17,7 @@
  * @grammar baidu.object.values(source)
  * @param {Object} source 目标对象
  * @see baidu.object.keys
- *             
+ *
  * @returns {Array} 值列表
  */
 baidu.object.values = function (source) {

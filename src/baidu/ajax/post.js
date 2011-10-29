@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/ajax/post.js
  * author: allstar, erik
  * version: 1.1.0
@@ -21,12 +21,12 @@
  * @param {Function} [onsuccess] 请求成功之后的回调函数，function(XMLHttpRequest xhr, string responseText)
  * @meta standard
  * @see baidu.ajax.get,baidu.ajax.request
- *             
+ *
  * @returns {XMLHttpRequest} 	发送请求的XMLHttpRequest对象
  */
 baidu.ajax.post = function (url, data, onsuccess) {
     return baidu.ajax.request(
-        url, 
+        url,
         {
             'onsuccess': onsuccess,
             'method': 'POST',

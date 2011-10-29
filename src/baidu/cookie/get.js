@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/cookie/get.js
  * author: erik
  * version: 1.1.0
@@ -20,7 +20,7 @@
  * <b>注意：</b>该方法会对cookie值进行decodeURIComponent解码。如果想获得cookie源字符串，请使用getRaw方法。
  * @meta standard
  * @see baidu.cookie.getRaw,baidu.cookie.set
- *             
+ *
  * @returns {string|null} cookie的值，获取不到时返回null
  */
 baidu.cookie.get = function (key) {

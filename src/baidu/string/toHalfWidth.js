@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/string/toHalfWidth.js
  * author: erik
  * version: 1.1.0
@@ -16,7 +16,7 @@
  * @grammar baidu.string.toHalfWidth(source)
  * @param {string} source 目标字符串
  * @remark
- * 
+ *
 将全角的字符转成半角, 将“&amp;#xFF01;”至“&amp;#xFF5E;”范围的全角转成“&amp;#33;”至“&amp;#126;”, 还包括全角空格包括常见的全角数字/空格/字母, 用于需要同时支持全半角的转换, 具体转换列表如下("空格"未列出)：<br><br>
 
 ！ => !<br>
@@ -113,13 +113,13 @@
 ｜ => |<br>
 ｝ => }<br>
 ～ => ~<br>
-		
- *             
+
+ *
  * @returns {string} 转换后的字符串
  */
 
 baidu.string.toHalfWidth = function (source) {
-    return String(source).replace(/[\uFF01-\uFF5E]/g, 
+    return String(source).replace(/[\uFF01-\uFF5E]/g,
         function(c){
             return String.fromCharCode(c.charCodeAt(0) - 65248);
         }).replace(/\u3000/g," ");

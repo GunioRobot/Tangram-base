@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/sio/_removeScriptTag.js
  * author: berg
  * thanks: kexin, xuejian
@@ -14,7 +14,7 @@
 /**
  * 删除script的属性，再删除script标签，以解决修复内存泄漏的问题
  *
- * 
+ *
  * @param {object}          scr               script节点
  */
 baidu.sio._removeScriptTag = function(scr){

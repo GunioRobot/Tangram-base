@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/event/fire.js
  * author: linlingyu
  * version: 1.1.0
@@ -21,7 +21,7 @@
  * @param {HTMLElement|string|window} element 目标元素或目标元素id
  * @param {string} type 事件类型
  * @param {Object} options 触发的选项
-				
+
  * @param {Boolean} options.bubbles 是否冒泡
  * @param {Boolean} options.cancelable 是否可以阻止事件的默认操作
  * @param {window|null} options.view 指定 Event 的 AbstractView
@@ -39,7 +39,7 @@
  * @param {Number} options.charCode 指定 Event 的字符编码
  * @param {HTMLElement} options.relatedTarget 指定 Event 的相关 EventTarget
  * @version 1.3
- *             
+ *
  * @returns {HTMLElement} 目标元素
  */
 (function(){

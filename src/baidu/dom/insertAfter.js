@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/dom/insertAfter.js
  * author: allstar, erik
  * version: 1.1.0
@@ -19,7 +19,7 @@
  * @param {HTMLElement|string} existElement 基准元素
  * @meta standard
  * @see baidu.dom.insertBefore
- *             
+ *
  * @returns {HTMLElement} 被添加的目标元素
  */
 baidu.dom.insertAfter = function (newElement, existElement) {
@@ -28,7 +28,7 @@ baidu.dom.insertAfter = function (newElement, existElement) {
     newElement = g(newElement);
     existElement = g(existElement);
     existParent = existElement.parentNode;
-    
+
     if (existParent) {
         existParent.insertBefore(newElement, existElement.nextSibling);
     }

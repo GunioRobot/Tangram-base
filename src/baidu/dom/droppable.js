@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2010 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/dom/droppable.js
  * author: rocy
  * version: 1.4.0
@@ -23,17 +23,17 @@
  * @grammar baidu.dom.droppable(element[, options])
  * @param {HTMLElement|string} element 容器元素或者容器元素的ID
  * @param {Object} [options] 选项，拖拽元素对于容器元素的事件
-                
+
  * @config {Function} [ondrop] 当元素放到容器元素内部触发
  * @config {Function} [ondropover] 当元素在容器元素上方时触发
  * @config {Function} [ondropout] 当元素移除容器元素时触发
  * @version 1.3
  * @remark
- * 
+ *
             需要将元素和容器元素的定位都设置为absolute
-        
+
  * @see baidu.dom.droppable
- *             
+ *
  * @returns {Function} cancel取消拖拽
  */
 baidu.dom.droppable = function(element, options){

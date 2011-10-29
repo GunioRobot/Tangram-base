@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/dom/getAncestorByClass.js
  * author: allstar, erik
  * version: 1.1.0
@@ -20,7 +20,7 @@
  * @param {string} className 祖先元素的class，只支持单个class
  * @remark 使用者应保证提供的className合法性，不应包含不合法字符，className合法字符参考：http://www.w3.org/TR/CSS2/syndata.html。
  * @see baidu.dom.getAncestorBy,baidu.dom.getAncestorByTag
- *             
+ *
  * @returns {HTMLElement|null} 指定元素className最近的祖先元素，查找不到时返回null
  */
 baidu.dom.getAncestorByClass = function (element, className) {

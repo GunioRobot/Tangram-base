@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/string/decodeHTML.js
  * author: erik
  * version: 1.1.0
@@ -19,7 +19,7 @@
  * @shortcut decodeHTML
  * @meta standard
  * @see baidu.string.encodeHTML
- *             
+ *
  * @returns {string} html解码后的字符串
  */
 baidu.string.decodeHTML = function (source) {

@@ -20,7 +20,7 @@
  * 不支持删除单侧空白字符
  * @shortcut trim
  * @meta standard
- *             
+ *
  * @returns {string} 删除两端空白字符后的字符串
  */
 

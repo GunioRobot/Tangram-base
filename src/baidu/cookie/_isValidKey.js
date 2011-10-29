@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/cookie/_isValidKey.js
  * author: erik
  * version: 1.1.0
@@ -12,7 +12,7 @@
 
 /**
  * 验证字符串是否合法的cookie键名
- * 
+ *
  * @param {string} source 需要遍历的数组
  * @return {boolean} 是否合法的cookie键名
  */
@@ -30,7 +30,7 @@ baidu.cookie._isValidKey = function (key) {
     // attr       = token
     // value      = word
     // word       = token | quoted-string
-    
+
     // http://www.ietf.org/rfc/rfc2068.txt
     // token      = 1*<any CHAR except CTLs or tspecials>
     // CHAR       = <any US-ASCII character (octets 0 - 127)>
@@ -42,6 +42,6 @@ baidu.cookie._isValidKey = function (key) {
     //              | "{" | "}" | SP | HT
     // SP         = <US-ASCII SP, space (32)>
     // HT         = <US-ASCII HT, horizontal-tab (9)>
-        
+
     return (new RegExp("^[^\\x00-\\x20\\x7f\\(\\)<>@,;:\\\\\\\"\\[\\]\\?=\\{\\}\\/\\u0080-\\uffff]+\x24")).test(key);
 };

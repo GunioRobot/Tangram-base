@@ -1,11 +1,11 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/number/comma.js
  * author: dron, erik, berg
  * version: 1.2.0
- * date: 2010/09/07 
+ * date: 2010/09/07
  */
 
 ///import baidu.number;
@@ -17,7 +17,7 @@
  * @grammar baidu.number.comma(source[, length])
  * @param {number} source 需要处理的数字
  * @param {number} [length] 两次逗号之间的数字位数，默认为3位
- *             
+ *
  * @returns {string} 添加逗号分隔后的字符串
  */
 baidu.number.comma = function (source, length) {

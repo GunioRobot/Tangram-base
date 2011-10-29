@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/dom/setStyles.js
  * author: allstar
  * version: 1.1.0
@@ -21,7 +21,7 @@
  * @shortcut setStyles
  * @meta standard
  * @see baidu.dom.setStyle,baidu.dom.getStyle
- *             
+ *
  * @returns {HTMLElement} 目标元素
  */
 baidu.dom.setStyles = function (element, styles) {

@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2010 Baidu Inc. All rights reserved.
- * 
+ *
  * @author: meizz
  * @namespace: baidu.page.createStyleSheet
  * @version: 2010-06-12
@@ -17,13 +17,13 @@
  * @function
  * @grammar baidu.page.createStyleSheet(options)
  * @param {Object} options 配置信息
-                
+
  * @param {Document} options.document 指定在哪个document下创建，默认是当前文档
  * @param {String} options.url css文件的URL
  * @param {Number} options.index 在文档里的排序索引
  * @version 1.2
  * @see baidu.page.createStyleSheet.StyleSheet
- *             
+ *
  * @returns {baidu.page.createStyleSheet.StyleSheet} styleSheet对象(注意: 仅IE下,其他浏览器均返回null)
  */
 baidu.page.createStyleSheet = function(options){
@@ -32,7 +32,7 @@ baidu.page.createStyleSheet = function(options){
         s;
 
     if (baidu.browser.ie) {
-        //修复ie下会请求一个undefined的bug  berg 2010/08/27 
+        //修复ie下会请求一个undefined的bug  berg 2010/08/27
         if(!op.url)
             op.url = "";
         return doc.createStyleSheet(op.url, op.index);
@@ -70,7 +70,7 @@ baidu.page.createStyleSheet = function(options){
     }
 };
 /*
- * styleSheet对象 有两个方法 
+ * styleSheet对象 有两个方法
  *  addRule(selector, style, i)
  *  removeRule(i)
  *  这两个方法已经做了浏览器兼容处理

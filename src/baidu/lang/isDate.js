@@ -1,11 +1,11 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/lang/isDate.js
  * author: berg
  * version: 1.0.0
- * date: 2010/10/12 
+ * date: 2010/10/12
  */
 
 ///import baidu.lang;
@@ -18,7 +18,7 @@
  * @param {Any} source 目标参数
  * @version 1.3
  * @see baidu.lang.isString,baidu.lang.isObject,baidu.lang.isNumber,baidu.lang.isArray,baidu.lang.isBoolean,baidu.lang.isElement
- *             
+ *
  * @returns {boolean} 类型判断结果
  */
 baidu.lang.isDate = function(o) {

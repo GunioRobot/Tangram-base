@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/swf/create.js
  * author: erik
  * version: 1.1.0
@@ -15,7 +15,7 @@
  * @name baidu.swf.create
  * @function
  * @grammar baidu.swf.create(options[, container])
- * 
+ *
  * @param {Object} 	options 					创建flash的选项参数
  * @param {string} 	options.id 					要创建的flash的标识
  * @param {string} 	options.url 				flash文件的url
@@ -40,21 +40,21 @@
  * @param {boolean} options.devicefont 			设置静态文本对象是否以设备字体呈现。允许值：true/false
  * @param {boolean} options.swliveconnect 		第一次加载flash时浏览器是否应启动Java。允许值：true/false
  * @param {Object} 	options.vars 				要传递给flash的参数，支持JSON或string类型。
- * 
+ *
  * @param {HTMLElement|string} [container] 		flash对象的父容器元素，不传递该参数时在当前代码位置创建flash对象。
- * 
+ *
  * @see baidu.swf.createHTML,baidu.swf.getMovie
  */
 baidu.swf.create = function (options, target) {
     options = options || {};
-    var html = baidu.swf.createHTML(options) 
-               || options['errorMessage'] 
+    var html = baidu.swf.createHTML(options)
+               || options['errorMessage']
                || '';
-                
+
     if (target && 'string' == typeof target) {
         target = document.getElementById(target);
     }
-    
+
     if (target) {
         target.innerHTML = html;
     } else {

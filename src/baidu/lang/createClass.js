@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2010 Baidu Inc. All rights reserved.
- * 
+ *
  * @author: meizz
  * @namespace: baidu.lang.createClass
  * @version: 2010-05-13
@@ -16,17 +16,17 @@
  * @function
  * @grammar baidu.lang.createClass(constructor[, options])
  * @param {Function} constructor 类的构造器函数
- * @param {Object} [options] 
-                
+ * @param {Object} [options]
+
  * @config {string} [className] 类名
  * @config {Function} [superClass] 父类，默认为baidu.lang.Class
  * @version 1.2
  * @remark
- * 
+ *
             使用createClass能方便的创建一个带有继承关系的类。同时会为返回的类对象添加extend方法，使用obj.extend({});可以方便的扩展原型链上的方法和属性
-        
+
  * @see baidu.lang.Class,baidu.lang.inherits
- *             
+ *
  * @returns {Object} 一个类对象
  */
 

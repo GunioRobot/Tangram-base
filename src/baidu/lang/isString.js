@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/lang/isString.js
  * author: erik
  * version: 1.1.0
@@ -19,7 +19,7 @@
  * @shortcut isString
  * @meta standard
  * @see baidu.lang.isObject,baidu.lang.isNumber,baidu.lang.isArray,baidu.lang.isElement,baidu.lang.isBoolean,baidu.lang.isDate
- *             
+ *
  * @returns {boolean} 类型判断结果
  */
 baidu.lang.isString = function (source) {

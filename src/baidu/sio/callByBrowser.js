@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/sio/callByBrowser.js
  * author: erik
  * version: 1.1.0
@@ -31,7 +31,7 @@ baidu.sio.callByBrowser = function (url, callback, options) {
         scriptLoaded = 0,
         attr,
         charset = options['charset'];
-    
+
     // IE和opera支持onreadystatechange
     // safari、chrome、opera支持onload
     scr.onload = scr.onreadystatechange = function () {
@@ -39,7 +39,7 @@ baidu.sio.callByBrowser = function (url, callback, options) {
         if (scriptLoaded) {
             return;
         }
-        
+
         var readyState = scr.readyState;
         if ('undefined' == typeof readyState
             || readyState == "loaded"
@@ -52,7 +52,7 @@ baidu.sio.callByBrowser = function (url, callback, options) {
             }
         }
     };
-    
+
     scr.setAttribute('type', 'text/javascript');
     charset && scr.setAttribute('charset', charset);
     scr.setAttribute('src', url);

@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/event/on.js
  * author: erik
  * version: 1.1.0
@@ -20,14 +20,14 @@
  * @param {string} type 事件类型
  * @param {Function} listener 需要添加的监听器
  * @remark
- * 
+ *
 1. 不支持跨浏览器的鼠标滚轮事件监听器添加<br>
 2. 改方法不为监听器灌入事件对象，以防止跨iframe事件挂载的事件对象获取失败
-		
+
  * @shortcut on
  * @meta standard
  * @see baidu.event.un
- *             
+ *
  * @returns {HTMLElement|window} 目标元素
  */
 baidu.event.on = function (element, type, listener) {
@@ -48,7 +48,7 @@ baidu.event.on = function (element, type, listener) {
     	realType = afterFilter.type;
     	realListener = afterFilter.listener;
     }
-    
+
     // 事件监听器挂载
     if (element.addEventListener) {
 		element.addEventListener(realType, realListener, false);

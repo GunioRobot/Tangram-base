@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/string/filterFormat/escapeString.js
  * author: rocy
  * version: 1.1.2

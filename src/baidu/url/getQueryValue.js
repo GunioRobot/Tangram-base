@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/url/getQueryValue.js
  * author: erik
  * version: 1.1.0
@@ -20,19 +20,19 @@
  * @param {string} key 要获取的参数名
  * @meta standard
  * @see baidu.url.jsonToQuery
- *             
+ *
  * @returns {string|null} 获取的参数值，获取不到时返回null
  */
 baidu.url.getQueryValue = function (url, key) {
     var reg = new RegExp(
-                        "(^|&|\\?|#)" 
-                        + baidu.string.escapeReg(key) 
-                        + "=([^&]*)(&|\x24)", 
+                        "(^|&|\\?|#)"
+                        + baidu.string.escapeReg(key)
+                        + "=([^&]*)(&|\x24)",
                     "");
     var match = url.match(reg);
     if (match) {
         return match[2];
     }
-    
+
     return null;
 };

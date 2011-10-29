@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/lang/createSingle.js
  * author: meizz, berg
  * version: 1.1.2
@@ -19,7 +19,7 @@
  * @param {Object} json 直接挂载到这个单例里的预定属性/方法
  * @version 1.2
  * @see baidu.lang.Class
- *             
+ *
  * @returns {Object} 一个实例
  */
 baidu.lang.createSingle = function (json) {

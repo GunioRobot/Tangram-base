@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/dom/getAncestorBy.js
  * author: allstar, erik
  * version: 1.1.0
@@ -18,7 +18,7 @@
  * @param {HTMLElement|string} element 目标元素或目标元素的id
  * @param {Function} method 判断祖先元素条件的函数，function (element)
  * @see baidu.dom.getAncestorByTag,baidu.dom.getAncestorByClass
- *             
+ *
  * @returns {HTMLElement|null} 符合条件的最近的祖先元素，查找不到时返回null
  */
 baidu.dom.getAncestorBy = function (element, method) {

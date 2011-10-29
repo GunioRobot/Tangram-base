@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/string/escapeReg.js
  * author: erik
  * version: 1.1.0
@@ -19,7 +19,7 @@
  * @remark
  * 给以下字符前加上“\”进行转义：.*+?^=!:${}()|[]/\
  * @meta standard
- *             
+ *
  * @returns {string} 转义后的字符串
  */
 baidu.string.escapeReg = function (source) {

@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/dom/contains.js
  * author: allstar
  * version: 1.1.0
@@ -18,7 +18,7 @@
  * @param {HTMLElement|string} container 包含元素或元素的id
  * @param {HTMLElement|string} contained 被包含元素或元素的id
  * @see baidu.dom.intersect
- *             
+ *
  * @returns {boolean} contained元素是否被包含于container元素的DOM节点上
  */
 baidu.dom.contains = function (container, contained) {

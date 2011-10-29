@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/page/getScrollTop.js
  * author: erik
  * version: 1.1.0
@@ -16,7 +16,7 @@
  * @function
  * @grammar baidu.page.getScrollTop()
  * @see baidu.page.getScrollLeft
- *             
+ *
  * @returns {number} 纵向滚动量
  */
 baidu.page.getScrollTop = function () {

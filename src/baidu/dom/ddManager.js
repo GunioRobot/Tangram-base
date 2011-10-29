@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2010 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/dom/dragManager.js
  * author: rocy
  * version: 1.4.0

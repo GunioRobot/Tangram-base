@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/dom/_NAME_ATTRS.js
  * author: allstar, erik
  * version: 1.1.0
@@ -26,7 +26,7 @@ baidu.dom._NAME_ATTRS = (function () {
         'usemap': 'useMap',
         'frameborder': 'frameBorder'
     };
-    
+
     if (baidu.browser.ie < 8) {
         result['for'] = 'htmlFor';
         result['class'] = 'className';
@@ -34,6 +34,6 @@ baidu.dom._NAME_ATTRS = (function () {
         result['htmlFor'] = 'for';
         result['className'] = 'class';
     }
-    
+
     return result;
 })();

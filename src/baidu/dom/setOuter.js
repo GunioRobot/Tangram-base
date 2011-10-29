@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/dom/setOuter.js
  * author: berg
  * version: 1.0
@@ -31,18 +31,18 @@ baidu.dom.setOuter = function (element, styles) {
         //global element;
         return parseFloat(baidu.getStyle(element, name)) || 0;
     }
-    
+
     if(baidu.browser.isStrict){
         if(styles.width){
-            styles.width -= getNumericalStyle('paddingLeft') + 
-                            getNumericalStyle('paddingRight') + 
-                            getNumericalStyle('borderLeftWidth') + 
+            styles.width -= getNumericalStyle('paddingLeft') +
+                            getNumericalStyle('paddingRight') +
+                            getNumericalStyle('borderLeftWidth') +
                             getNumericalStyle('borderRightWidth');
         }
         if(styles.height){
-            styles.height -= getNumericalStyle('paddingTop') + 
-                             getNumericalStyle('paddingBottom') + 
-                             getNumericalStyle('borderTopWidth') + 
+            styles.height -= getNumericalStyle('paddingTop') +
+                             getNumericalStyle('paddingBottom') +
+                             getNumericalStyle('borderTopWidth') +
                              getNumericalStyle('borderBottomWidth');
         }
     }

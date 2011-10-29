@@ -2,7 +2,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/array/each.js
  * author: erik
  * version: 1.1.0
@@ -22,18 +22,18 @@
  * each方法不支持对Object的遍历,对Object的遍历使用baidu.object.each 。
  * @shortcut each
  * @meta standard
- *             
+ *
  * @returns {Array} 遍历的数组
  */
- 
+
 baidu.array.each = function (source, iterator) {
     var returnValue, item, i, len = source.length;
-    
+
     if ('function' == typeof iterator) {
         for (i = 0; i < len; i++) {
             item = source[i];
             returnValue = iterator.call(source, item, i);
-    
+
             if (returnValue === false) {
                 break;
             }

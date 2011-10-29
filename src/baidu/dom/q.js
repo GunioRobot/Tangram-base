@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/dom/q.js
  * author: allstar, erik
  * version: 1.1.0
@@ -24,18 +24,18 @@
  * @shortcut q,Q
  * @meta standard
  * @see baidu.dom.g
- *             
+ *
  * @returns {Array} 获取的元素集合，查找不到或className参数错误时返回null
  */
 baidu.dom.q = function (className, element, tagName) {
-    var result = [], 
-    trim = baidu.string.trim, 
+    var result = [],
+    trim = baidu.string.trim,
     len, i, elements, node;
 
     if (!(className = trim(className))) {
         return null;
     }
-    
+
     // 初始化element参数
     if ('undefined' == typeof element) {
         element = document;
@@ -45,13 +45,13 @@ baidu.dom.q = function (className, element, tagName) {
             return result;
         }
     }
-    
+
     // 初始化tagName参数
     tagName && (tagName = trim(tagName).toUpperCase());
-    
+
     // 查询元素
     if (element.getElementsByClassName) {
-        elements = element.getElementsByClassName(className); 
+        elements = element.getElementsByClassName(className);
         len = elements.length;
         for (i = 0; i < len; i++) {
             node = elements[i];
@@ -62,11 +62,11 @@ baidu.dom.q = function (className, element, tagName) {
         }
     } else {
         className = new RegExp(
-                        "(^|\\s)" 
+                        "(^|\\s)"
                         + baidu.string.escapeReg(className)
                         + "(\\s|\x24)");
-        elements = tagName 
-                    ? element.getElementsByTagName(tagName) 
+        elements = tagName
+                    ? element.getElementsByTagName(tagName)
                     : (element.all || element.getElementsByTagName("*"));
         len = elements.length;
         for (i = 0; i < len; i++) {

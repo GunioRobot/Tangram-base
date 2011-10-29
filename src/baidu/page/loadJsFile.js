@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/page/loadJsFile.js
  * author: allstar
  * version: 1.1.0
@@ -25,5 +25,5 @@ baidu.page.loadJsFile = function (path) {
     element.setAttribute('src', path);
     element.setAttribute('defer', 'defer');
 
-    document.getElementsByTagName("head")[0].appendChild(element);    
+    document.getElementsByTagName("head")[0].appendChild(element);
 };

@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/url/jsonToQuery.js
  * author: erik
  * version: 1.1.0
@@ -18,18 +18,18 @@
  * @param {JSON} json 需要解析的json对象
  * @param {Function} [replacer] 对值进行特殊处理的函数，function (value, key)
  * @see baidu.url.queryToJson,baidu.url.getQueryValue
- *             
+ *
  * @returns {string} 解析结果字符串
  */
 baidu.url.jsonToQuery = function (json, replacer) {
-    var result = [], 
-        len = 0, 
+    var result = [],
+        len = 0,
         key, item, itemLen;
-    
+
     replacer = replacer || function (value) {
         return baidu.url.escapeSymbol(value);
     };
-        
+
     for (key in json) {
         if (json.hasOwnProperty(key)) {
             item = json[key];

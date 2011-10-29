@@ -1,11 +1,11 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/fn/multize.js
  * author: berg
  * version: 1.0.0
- * date: 2010/11/02 
+ * date: 2010/11/02
  */
 
 ///import baidu.fn;
@@ -18,7 +18,7 @@
  * @param {Function}	func 		需要包装的函数
  * @param {Boolean}		[recursive] 是否递归包装（如果数组里面一项仍然是数组，递归），可选
  * @version 1.3
- *             
+ *
  * @returns {Function} 已集化的函数
  */
 baidu.fn.multize = function (func, recursive) {
@@ -35,7 +35,7 @@ baidu.fn.multize = function (func, recursive) {
             for(len = list.length; i < len; i++){
                 moreArgs[0]=list[i];
                 r = fn.apply(this, moreArgs);
-                ret.push(r); 	
+                ret.push(r);
             }
             return ret;
         }else{

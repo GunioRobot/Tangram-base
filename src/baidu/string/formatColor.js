@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2010 Baidu Inc. All rights reserved.
- * 
+ *
  * @author: meizz
  * @namespace: baidu.string.formatColor
  * @version: 2010-01-23
@@ -16,7 +16,7 @@
  * @grammar baidu.string.formatColor(color)
  * @param {string} color 颜色值字符串
  * @version 1.3
- *             
+ *
  * @returns {string} #RRGGBB格式的字符串或空
  */
 (function(){
@@ -61,7 +61,7 @@
             return "#"+ s1 + s1 + s2 + s2 + s3 + s3;
         }else if(keyword[color])
             return keyword[color];
-        
+
         return "";
     };
 })();

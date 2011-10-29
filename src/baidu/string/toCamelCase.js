@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/string/toCamelCase.js
  * author: erik, berg
  * version: 1.2
@@ -19,10 +19,10 @@
  * @remark
  * 支持单词以“-_”分隔
  * @meta standard
- *             
+ *
  * @returns {string} 驼峰化处理后的字符串
  */
- 
+
  //todo:考虑以后去掉下划线支持？
 baidu.string.toCamelCase = function (source) {
     //提前判断，提高getStyle等的效率 thanks xianwei

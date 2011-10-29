@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/dom/getAncestorByTag.js
  * author: allstar, erik
  * version: 1.1.0
@@ -18,7 +18,7 @@
  * @param {HTMLElement|string} element 目标元素或目标元素的id
  * @param {string} tagName 祖先元素的标签名
  * @see baidu.dom.getAncestorBy,baidu.dom.getAncestorByClass
- *             
+ *
  * @returns {HTMLElement|null} 指定标签的最近的祖先元素，查找不到时返回null
  */
 baidu.dom.getAncestorByTag = function (element, tagName) {

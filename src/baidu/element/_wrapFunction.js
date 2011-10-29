@@ -2,7 +2,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/element/Element.js
  * author: berg
  * version: 1.0.0
@@ -20,7 +20,7 @@
  * @name baidu.element._wrapFunction
  * @function
  * @grammar baidu.element._wrapFunction(func, index)
- * 
+ *
  * @param {Function} 	func	要包装的静态方法
  * @param {number} 		index	包装函数的第几个返回值
  *
@@ -38,13 +38,13 @@ baidu.element._wrapFunction = function(func, index){
      * @param {function} func    需要包装的函数
      * @param {function} wrapper 包装器
      * @param {number} 包装第几个参数
-     * 
+     *
      * @return {function} 包装后的函数
      */
     function wrapReturnValue(func, wrapper, index){
         index = index | 0;
         return function(){
-            var ret = func.apply(this, arguments); 
+            var ret = func.apply(this, arguments);
 
             if(index > 0){
                 return new wrapper(arguments[index - 1]);

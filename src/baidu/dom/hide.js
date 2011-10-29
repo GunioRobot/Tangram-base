@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/dom/hide.js
  * author: allstar
  * version: 1.1.0
@@ -19,7 +19,7 @@
  * @shortcut hide
  * @meta standard
  * @see baidu.dom.show,baidu.dom.toggle
- *             
+ *
  * @returns {HTMLElement} 目标元素
  */
 baidu.dom.hide = function (element) {

@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/dom/setAttr.js
  * author: allstar
  * version: 1.1.0
@@ -20,13 +20,13 @@
  * @param {string} key 要设置的attribute键名
  * @param {string} value 要设置的attribute值
  * @remark
- * 
+ *
             设置object的自定义属性时，由于浏览器限制，无法设置。
-        
+
  * @shortcut setAttr
  * @meta standard
  * @see baidu.dom.getAttr,baidu.dom.setAttrs
- *             
+ *
  * @returns {HTMLElement} 目标元素
  */
 baidu.dom.setAttr = function (element, key, value) {

@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/lang/Event.js
  * author: meizz, erik, berg
  * version: 1.1.1
@@ -36,7 +36,7 @@ baidu.lang.Event = function (type, target) {
  * @param 	{string}   type         自定义事件的名称
  * @param 	{Function} handler      自定义事件被触发时应该调用的回调函数
  * @param 	{string}   [key]		为事件监听函数指定的名称，可在移除时使用。如果不提供，方法会默认为它生成一个全局唯一的key。
- * @remark 	事件类型区分大小写。如果自定义事件名称不是以小写"on"开头，该方法会给它加上"on"再进行判断，即"click"和"onclick"会被认为是同一种事件。 
+ * @remark 	事件类型区分大小写。如果自定义事件名称不是以小写"on"开头，该方法会给它加上"on"再进行判断，即"click"和"onclick"会被认为是同一种事件。
  */
 baidu.lang.Class.prototype.addEventListener = function (type, handler, key) {
     if (typeof handler != "function") {
@@ -51,7 +51,7 @@ baidu.lang.Class.prototype.addEventListener = function (type, handler, key) {
         if (/[^\w\-]/.test(key)) {
             throw("nonstandard key:" + key);
         } else {
-            handler.hashCode = key; 
+            handler.hashCode = key;
             id = key;
         }
     }
@@ -62,7 +62,7 @@ baidu.lang.Class.prototype.addEventListener = function (type, handler, key) {
     handler.hashCode = id;
     t[type][id] = handler;
 };
- 
+
 /**
  * 移除对象的事件监听器。引入baidu.lang.Event后，Class的子类实例才会获得该方法。
  * @grammar obj.removeEventListener(type, handler)

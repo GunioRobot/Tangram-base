@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/dom/toggle.js
  * author: allstar
  * version: 1.1.0
@@ -18,7 +18,7 @@
  * @param {HTMLElement|string} element 目标元素或目标元素的id
  * @meta standard
  * @see baidu.dom.show,baidu.dom.hide
- *             
+ *
  * @returns {HTMLElement} 目标元素
  */
 baidu.dom.toggle = function (element) {

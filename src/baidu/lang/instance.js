@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/lang/instance.js
  * author: meizz, erik
  * version: 1.1.0
@@ -17,7 +17,7 @@
  * @grammar baidu.lang.instance(guid)
  * @param {string} guid 需要获取实例的guid
  * @meta standard
- *             
+ *
  * @returns {Object|null} 如果存在的话，返回;否则返回null。
  */
 baidu.lang.instance = function (guid) {

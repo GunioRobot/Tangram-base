@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/dom/children.js
  * author: allstar
  * version: 1.1.0
@@ -18,7 +18,7 @@
  * @grammar baidu.dom.children(element)
  * @param {HTMLElement|String} element 目标元素或目标元素的id
  * @meta standard
- *             
+ *
  * @returns {Array} 目标元素的子元素列表，没有子元素时返回空数组
  */
 baidu.dom.children = function (element) {
@@ -29,6 +29,6 @@ baidu.dom.children = function (element) {
             children.push(tmpEl);
         }
     }
-    
-    return children;    
+
+    return children;
 };

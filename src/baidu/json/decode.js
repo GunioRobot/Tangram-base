@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/json/decode.js
  * author: erik
  * version: 1.1.0
@@ -18,7 +18,7 @@
  * @param {string} source 需要解析的字符串
  * @meta out
  * @see baidu.json.encode,baidu.json.parse
- *             
+ *
  * @returns {JSON} 解析结果json对象
  */
 baidu.json.decode = function (source) {

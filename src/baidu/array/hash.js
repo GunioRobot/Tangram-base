@@ -1,11 +1,11 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/array/hash.js
  * author: berg
  * version: 1.0.0
- * date: 2010/10/12 
+ * date: 2010/10/12
  */
 
 ///import baidu.array;
@@ -17,7 +17,7 @@
  * @grammar baidu.array.hash(keys[, values])
  * @param {Array} keys 作为key的数组
  * @param {Array} [values] 作为value的数组，未指定此参数时，默认值将对象的值都设为true。
- *             
+ *
  * @returns {Object} 合并后的对象{key : value}
  */
 baidu.array.hash = function(keys, values) {

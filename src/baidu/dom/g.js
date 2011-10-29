@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/dom/g.js
  * author: allstar, erik
  * version: 1.1.0
@@ -19,7 +19,7 @@
  * @shortcut g,G
  * @meta standard
  * @see baidu.dom.q
- *             
+ *
  * @returns {HTMLElement|null} 获取的元素，查找不到时返回null,如果参数不合法，直接返回参数
  */
 baidu.dom.g = function (id) {

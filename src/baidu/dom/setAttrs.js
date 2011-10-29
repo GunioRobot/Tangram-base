@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/dom/setAttrs.js
  * author: allstar
  * version: 1.1.0
@@ -21,7 +21,7 @@
  * @shortcut setAttrs
  * @meta standard
  * @see baidu.dom.setAttr,baidu.dom.getAttr
- *             
+ *
  * @returns {HTMLElement} 目标元素
  */
 baidu.dom.setAttrs = function (element, attributes) {

@@ -20,16 +20,16 @@
  * @param {string} styleName 需要删除的样式名字
  * @version 1.3
  * @see baidu.dom.setStyle
- *             
+ *
  * @returns {HTMLElement} 目标元素
  */
- 
+
 // todo: 1. 只支持现代浏览器，有一些老浏览器可能不支持; 2. 有部分属性无法被正常移除
 baidu.dom.removeStyle = function (){
     var ele = document.createElement("DIV"),
         fn,
         _g = baidu.dom._g;
-    
+
     if (ele.style.removeProperty) {// W3C, (gecko, opera, webkit)
         fn = function (el, st){
             el = _g(el);

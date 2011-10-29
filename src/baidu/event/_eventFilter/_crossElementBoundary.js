@@ -2,7 +2,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/event/_eventFilter/_crossElementBoundary.js
  * author: Rocy, berg
  * version: 1.0.0
@@ -15,11 +15,11 @@
 ///import baidu.dom.getDocument;
 /**
  * 事件仅在鼠标进入/离开元素区域触发一次，当鼠标在元素区域内部移动的时候不会触发，用于为非IE浏览器添加mouseleave/mouseenter支持。
- * 
+ *
  * @name baidu.event._eventFilter._crossElementBoundary
  * @function
  * @grammar baidu.event._eventFilter._crossElementBoundary(listener, e)
- * 
+ *
  * @param {function} listener	要触发的函数
  * @param {DOMEvent} e 			DOM事件
  */
@@ -31,7 +31,7 @@ baidu.event._eventFilter._crossElementBoundary = function(listener, e){
         return listener.call(current, e);
     }
     if(
-       related === false || 
+       related === false ||
        // 如果current和related都是body，contains函数会返回false
        current == related ||
        // Firefox有时会把XUL元素作为relatedTarget

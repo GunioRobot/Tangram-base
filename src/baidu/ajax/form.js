@@ -27,9 +27,9 @@
  * @config {Function} [onsuccess] 		请求成功时触发，function(XMLHttpRequest xhr, string responseText)。
  * @config {Function} [onfailure] 		请求失败时触发，function(XMLHttpRequest xhr)。
  * @config {Function} [on{STATUS_CODE}] 	当请求为相应状态码时触发的事件，如on302、on404、on500，function(XMLHttpRequest xhr)。3XX的状态码浏览器无法获取，4xx的，可能因为未知问题导致获取失败。
-	
+
  * @see baidu.ajax.request
- *             
+ *
  * @returns {XMLHttpRequest} 发送请求的XMLHttpRequest对象
  */
 baidu.ajax.form = function (form, options) {

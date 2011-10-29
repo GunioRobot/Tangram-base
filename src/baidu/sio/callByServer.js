@@ -19,7 +19,7 @@
  * @param {string} url 加载数据的url
  * @param {Function|string} [callback] 服务器端调用的函数或函数名
  * @param {Object} [options] 加载数据时的选项
-				
+
  * @config {string} [charset] script的字符集
  * @config {string} [queryField] 服务器端callback请求字段名，默认为callback
  * @remark

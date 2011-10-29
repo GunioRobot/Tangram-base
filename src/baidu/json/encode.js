@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/json/encode.js
  * author: erik
  * version: 1.1.0
@@ -18,7 +18,7 @@
  * @param {JSON} value 需要序列化的json对象
  * @meta out
  * @see baidu.json.decode,baidu.json.stringify
- *             
+ *
  * @returns {string} 序列化后的字符串
  */
 baidu.json.encode = function (value) {

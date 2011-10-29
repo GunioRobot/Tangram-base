@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/dom/intersect.js
  * author: allstar
  * version: 1.1.0
@@ -19,13 +19,13 @@
  * @param {HTMLElement|string} element1 要检查的元素或元素的id
  * @param {HTMLElement|string} element2 要检查的元素或元素的id
  * @see baidu.dom.contains
- *             
+ *
  * @returns {boolean} 两个元素是否相交的检查结果
  */
 baidu.dom.intersect = function (element1, element2) {
-    var g = baidu.dom.g, 
-        getPosition = baidu.dom.getPosition, 
-        max = Math.max, 
+    var g = baidu.dom.g,
+        getPosition = baidu.dom.getPosition,
+        max = Math.max,
         min = Math.min;
 
     element1 = g(element1);

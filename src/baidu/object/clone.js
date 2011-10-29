@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/object/extend.js
  * author: erik, berg
  * version: 1.1.0
@@ -19,7 +19,7 @@
  * @remark
  * 对于Object来说，只拷贝自身成员，不拷贝prototype成员
  * @meta standard
- *             
+ *
  * @returns {Object} 拷贝后的新对象
  */
 baidu.object.clone  = (function(buildInObject){
@@ -54,5 +54,5 @@ baidu.object.clone  = (function(buildInObject){
     '[object Function]': 1,
     '[object RegExp]'  : 1,
     '[object Date]'    : 1,
-    '[object Error]'   : 1 
+    '[object Error]'   : 1
 });

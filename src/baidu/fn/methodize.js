@@ -1,11 +1,11 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/fn/methodize.js
  * author: berg
  * version: 1.0.0
- * date: 2010/11/02 
+ * date: 2010/11/02
  */
 
 ///import baidu.fn;

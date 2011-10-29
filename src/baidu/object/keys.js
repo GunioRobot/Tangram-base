@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/object/keys.js
  * author: erik
  * version: 1.1.0
@@ -17,7 +17,7 @@
  * @grammar baidu.object.keys(source)
  * @param {Object} source 目标对象
  * @see baidu.object.values
- *             
+ *
  * @returns {Array} 键名列表
  */
 baidu.object.keys = function (source) {

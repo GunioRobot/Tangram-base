@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/object/extend.js
  * author: erik
  * version: 1.1.0
@@ -18,13 +18,13 @@
  * @param {Object} target 目标对象
  * @param {Object} source 源对象
  * @remark
- * 
+ *
 1.目标对象中，与源对象key相同的成员将会被覆盖。<br>
 2.源对象的prototype成员不会拷贝。
-		
+
  * @shortcut extend
  * @meta standard
- *             
+ *
  * @returns {Object} 目标对象
  */
 baidu.object.extend = function (target, source) {
@@ -33,7 +33,7 @@ baidu.object.extend = function (target, source) {
             target[p] = source[p];
         }
     }
-    
+
     return target;
 };
 

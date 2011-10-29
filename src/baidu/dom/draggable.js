@@ -11,22 +11,22 @@
  * @param {Object} 		options.mouseEvent 	键名为clientX和clientY的object，若不设置此项，默认会获取当前鼠标位置
  * @param {Function} 	options.ondragstart drag开始时触发
  * @param {Function} 	options.ondrag 		drag进行中触发
- * @param {Function} 	options.ondragend 	drag结束时触发               
+ * @param {Function} 	options.ondragend 	drag结束时触发
  * @param {HTMLElement} options.handler 	用于拖拽的手柄，比如dialog的title
  * @param {Function} 	options.toggle 		在每次ondrag的时候，会调用这个方法判断是否应该停止拖拽。如果此函数返回值为false，则停止拖拽
  * @version 1.2
  * @remark
- * 
+ *
             要拖拽的元素必须事先设定样式的postion值，如果postion为absloute，并且没有设定top和left，拖拽开始时，无法取得元素的top和left值，这时会从[0,0]点开始拖拽
-        
+
  * @see baidu.dom.drag
- *             
- * @returns {Draggable Instance} 拖拽实例，包含cancel方法，可以停止拖拽     
+ *
+ * @returns {Draggable Instance} 拖拽实例，包含cancel方法，可以停止拖拽
  */
 /*
  * Tangram
  * Copyright 2010 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/dom/draggable.js
  * author: meizz, rocy, berg
  * version: 1.1.0

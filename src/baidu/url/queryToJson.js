@@ -17,7 +17,7 @@
  * @grammar baidu.url.queryToJson(url)
  * @param {string} url 目标URL
  * @see baidu.url.jsonToQuery
- *             
+ *
  * @returns {JSON} 解析结果对象
  */
 baidu.url.queryToJson = function (url) {

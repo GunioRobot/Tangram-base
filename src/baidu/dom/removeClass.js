@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/dom/removeClass.js
  * author: allstar, erik
  * version: 1.1.0
@@ -23,7 +23,7 @@
  * @shortcut removeClass
  * @meta standard
  * @see baidu.dom.addClass
- *             
+ *
  * @returns {HTMLElement} 目标元素
  */
 baidu.dom.removeClass = function (element, className) {

@@ -28,7 +28,7 @@
  * @grammar baidu.dom.drag(element, options)
  * @param {HTMLElement|string} element 元素或者元素的id
  * @param {Object} options 拖曳配置项
-                
+
  * @param {Array} options.range 限制drag的拖拽范围，数组中必须包含四个值，分别是上、右、下、左边缘相对上方或左方的像素距离。默认无限制
  * @param {Number} options.interval 拖曳行为的触发频度（时间：毫秒）
  * @param {Boolean} options.capture 鼠标拖曳粘滞
@@ -39,9 +39,9 @@
  * @param {function} options.autoStop 是否在onmouseup时自动停止拖拽。默认为true
  * @version 1.2
  * @remark
- * 
+ *
             要拖拽的元素必须事先设定样式的postion值，如果postion为absloute，并且没有设定top和left，拖拽开始时，无法取得元素的top和left值，这时会从[0,0]点开始拖拽
-        
+
  * @see baidu.dom.draggable
  */
 /**

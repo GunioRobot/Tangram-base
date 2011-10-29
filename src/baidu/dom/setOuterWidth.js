@@ -1,7 +1,7 @@
 /*
  * Tangram
  * Copyright 2009 Baidu Inc. All rights reserved.
- * 
+ *
  * path: baidu/dom/setOuterWidth.js
  * author: berg
  * version: 1.0
@@ -13,11 +13,11 @@
 
 /**
  * 设置元素的outerWidth
- * 
+ *
  * @name baidu.dom.setOuterWidth
  * @function
  * @grammar baidu.dom.setOuterWidth(element, width)
- * 
+ *
  * @param {HTMLElement|string} 	element DOM元素或元素的id
  * @param {number|string} 		width 	要设置的width
  *
